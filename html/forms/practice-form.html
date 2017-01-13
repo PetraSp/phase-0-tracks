@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice form</title>
+</head>
+<body>
+<h1>How did you like your zoo trip?</h1>
+<form action="success.html" method="post" name="zoo_trip">
+	<fieldset>
+		<div>
+			<label>Name:</label>
+			<input type="text" name="name">
+		</div>
+		<div>
+			<label>Email:</label>
+			<input type="text" name="email">
+		</div>
+		<div>
+			<label>Favorite animal:</label>
+			<select name="favorite animal">
+  				<option value="Lion">Lion</option> 
+  				<option value="Polarbear" selected>Polar bear</option>
+  				<option value="Seal">Seal</option>
+			</select>	
+		</div>
+		<div>
+		<p>Zoo feedback</p>	
+		<textarea name="textarea"
+   		rows="10" cols="50">Leave your comments here</textarea>
+		</div>
+		<div>
+  		<input type="checkbox" name="cb-agree" value="agree">
+  			I agree to the terms of service.
+  		</div>
+  		<div>
+  		<label>Choose a date when you attended the zoo></label>
+ 		<input type="date" name="date">
+		</div>
+	</fieldset>
+	<button type="submit">Submit</button>
+</form>
+</body>
+
+</html>
