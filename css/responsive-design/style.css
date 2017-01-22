@@ -49,16 +49,15 @@ figcaption {
   text-align: right;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 240px) and (max-width: 768px) {
   body {
-    font-size: 8em;
+    font-size: 6em;
     width: 100%;
   }
   section#external-links {
     width: 100%;
   }
 }
-
 
 /*
 @media screen and (max-width: 500px) {
