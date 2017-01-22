@@ -1,15 +1,16 @@
 body {
-  width: 960px;
+  max-width: 960px;
 }
 
 section#external-links {
-  width: 200px;
+  width: 20%;
+  min-width: 100px;
   display: inline-block;
   vertical-align: top;
 }
 
 main {
-  width: 756px;
+  width: 78%;
   display: inline-block;
   vertical-align: top;
 }
@@ -30,6 +31,7 @@ cite {
   padding-left: 0px;
 }
 
+
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like, 
 but it's optional! */
@@ -46,3 +48,25 @@ figcaption {
   font-style: italic;
   text-align: right;
 }
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 8em;
+    width: 100%;
+  }
+  section#external-links {
+    width: 100%;
+  }
+  main {
+    width: 100%
+  }
+}
+
+
+/*
+@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink;
+  }
+}
+*/
