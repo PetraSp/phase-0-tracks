@@ -5,6 +5,7 @@ body {
 
 section#external-links {
   width: 20%;
+  min-width: 100px;
   display: inline-block;
   vertical-align: top;
 }
@@ -30,6 +31,7 @@ cite {
   list-style-type: none;
   padding-left: 0px;
 }
+
 
 /* you're welcome to edit the
 image, figure, and figcaption CSS if you'd like, 
@@ -57,10 +59,14 @@ figcaption {
     width: 100%;
   }
 }
-
 /*@media screen and (max-width: 500px) {
+=======
+/*
+@media screen and (max-width: 500px) {
+>>>>>>> b72d3696f8997c2e48e543be361cfee9ba9c2f7d
   body {
     background-color: hotpink;
   }
 }
+<<<<<<< HEAD
 */
