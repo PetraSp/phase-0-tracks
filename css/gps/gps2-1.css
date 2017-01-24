@@ -1,0 +1,46 @@
+body {
+  background-image: url("https://octodex.github.com/images/welcometocat.png");
+}
+
+header {
+  background-color: #fdd1b7;
+  text-align: center;
+}
+
+section.column-1 {
+  float: left;
+  background-color: white;
+  opacity: 0.5;
+  width: 45%;
+  padding: 5px;
+  text-align: center;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 12px;  
+}
+
+section.column-1 ul {
+  list-style-type: none;
+}
+
+section.column-2 {
+  float: right;
+  background-color: white;
+  opacity: 0.5;
+  width: 45%;
+  padding: 5px;
+  text-align: center;
+  font-family: 'Helvetica', sans-serif;
+  font-size: 12px;
+}
+
+h2 {
+  color: #66d3d3;
+}
+footer {
+  background-color: #fdd1b7;
+  clear: both;
+  margin-top: 20px;
+  padding-top: 5px;
+  border-top: 10px solid white;
+  height: 30px;
+}
