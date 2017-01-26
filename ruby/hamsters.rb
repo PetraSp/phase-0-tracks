@@ -19,7 +19,6 @@ else
 end
 
 
-puts "Thanks for using the program!"
-
 puts "Hamster's name is #{hamster_name}, its volume level is #{volume}. It has #{fur_color} fur. Is it good to be adopted: #{adoption}. Estimated hamster's age is: #{estimated_age}."
 
+puts "Thanks for using the program!"
