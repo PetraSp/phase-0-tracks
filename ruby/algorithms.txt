@@ -32,7 +32,7 @@ Baking a cake algorithm
 - Mix them with flour, eggs and vanilla
 - Pour the dough into a baking pan
 - Put the pan into the oven
-- Bake in the oven 50 minutes at 350F until cake top springs back when touched in 	the center
+- Bake in the oven 50 minutes at 350F until cake top springs back when touched in the center
 - If ready, use oven mitts to remove the cake from the oven
 - If not, leave it in the oven for 5 minutes, repeat previous step
 - Let cool on a rack 
