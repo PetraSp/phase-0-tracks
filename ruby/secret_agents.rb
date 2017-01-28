@@ -49,5 +49,6 @@ end
 
 puts decrypt("bcd")
 
+# Call decrypt(encrypt("swordfish")) worked because it first encrypted "swordfish" - resulting in "txpsegjti" and that was then decrypted resulting in "swordfish."
 
 
