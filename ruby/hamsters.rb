@@ -9,16 +9,19 @@ fur_color = gets.chomp
 
 puts "Is the hamster a good candidate for adoption? (y/n)"
 adoption = gets.chomp
+	if adoption == "yes"
+		adoption = true
+	else adoption = false
+	end
 
 puts "What is hamster's estimated age?"
-estimated_age = gets.chomp.to_i
-if estimated_age == "nil"
-	puts "nil"
-else
-	puts estimated_age
+estimated_age = gets.chomp
+	if estimated_age == ''
+	   estimated_age = nil
+	else estimated_age = estimated_age.to_i
 end
 
 
-puts "Hamster's name is #{hamster_name}, its volume level is #{volume}. It has #{fur_color} fur. Is it good to be adopted: #{adoption}. Estimated hamster's age is: #{estimated_age}."
+puts "Hamster's name is #{hamster_name}, its volume level is #{volume}. It has a #{fur_color} fur. Is it good to be adopted: #{adoption}. Estimated hamster's age is: #{estimated_age}."
 
 puts "Thanks for using the program!"
