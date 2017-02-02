@@ -32,10 +32,10 @@ p client_information
 
 puts "What keys would you like to update? Please type 'none' or the key."
       input = gets.chomp 
-  if input == "none"
+ if input == "none"
     puts "Thanks for using the program. Bye!"
-  else 
-  	 input = input.to_sym
+ else 
+  	input = input.to_sym
    	puts "Please enter a new value:"
  	  new_value = gets.chomp 
  	  if new_value == :name || :decor_theme 
@@ -44,4 +44,4 @@ puts "What keys would you like to update? Please type 'none' or the key."
  	  client_information[input] = new_value.to_i
   	  end
  	 p client_information
-  end 
+ end 
