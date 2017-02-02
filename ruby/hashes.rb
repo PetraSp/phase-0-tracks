@@ -29,15 +29,20 @@ puts "What's your client decor theme?"
 
 p client_information
 
+
+
 puts "What keys would you like to update? Please type 'none' or the key."
       input = gets.chomp 
- if input == "none"
+  if input == "none"
     puts "Thanks for using the program. Bye!"
- 	else 
- 	  input = input.to_sym
-   puts "Please enter a new value:"
+  else 
+   	puts "Please enter a new value:"
+   	  input = input.to_sym
  	  new_value = gets.chomp 
+ 	  if new_value == :name || :decor_theme 
  	  client_information[input] = new_value
- end
- 
- p client_information
+ 	  else new_value == :age || :number_of_children
+ 	  client_information[input] = new_value.to_i
+  end
+ 	  p client_information
+  end 
