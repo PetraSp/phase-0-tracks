@@ -1,59 +1,69 @@
-# Write a method that takes a real name: "Felicia Torres" and creates a fake name
-# Input: string name, output: string name
-# Define vowels and consonants
+ # Alias Manager Pseudocode
 
- 
-=begin
-	
-	
-end	name = {
-		"first_name" => "Felicia",
-		"last_name" => "Torres"
-	}
+# change the string input (original name) to lowercase
+# take the input and split it by the space character
+# edge case vowels - "aeioua"
+# edge case consonants - "bcdfghjklmnpqrstvwxyzb"
+# iterate over the array with letters
+# if there is a space don't do anything
+# if it's a vowel then change letter to the next vowel
+# assign the vowels to a variable
+# find the index of the letter in my vowels variable
+# store the next vowel in a variable
+# if it's a consonant then change to the next consonant in the alphabet
+# assign the consonants to a variable
+# find the index of the letter in my consonants variable
+# store the next consonant in a variable
+# split the string in an array 
+# capitalize
+# create a new array and swap the first and last name
+# join the array back to a string
+# store data in a hash
 
-name
-first_name = "Felicia"
-last_name = "Torres"
-real_name = [first_name, last_name]
-real_name.class
-real_name[0], real_name[1] = real_name[1], real_name[0]
-p real_name
+def alias_manager(org_name)
 
-real_name
+vowels = "aeioua"
+consonants = "bcdfghjklmnpqrstvwxyzb"
+org_name = org_name.downcase
 
-=end 
-# search for vowels- How will you figure out whether a letter is a vowel?
+counter = 0
+while counter < org_name.length
+char_index = vowels.index(org_name[counter])
+  		if org_name[counter]!= " "
+            if char_index != nil
+               org_name[counter] = vowels[char_index+1]
+            else
+               char_index = consonants.index(org_name[counter])
+               org_name[counter] = consonants[char_index+1]
+      		end
+		end
+counter +=1
+end
+new_name = org_name.split(" ")
 
-def alias_manager(name)
-	vowels = ["a", "e", "i", "o", "u"]
-	consonants = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "y", "z"]
-	
-	name = name.downcase.split('')
-	name.map! do |letter| 
-		if vowels.include?(letter)
-		   vowels.rotate(1)[vowels.index(letter)]
-		elsif consonants.include?(letter)
-			  consonants.rotate(1)[consonants.index(letter)]
-		else 
-			letter
-		 end
-	end 
-		name.join.split(" ").reverse.join(' ')
-end 
+
+counter = 0
+while counter < new_name.length
+        new_name[counter] = new_name[counter].capitalize
+        counter +=1
+end
+code_name = new_name.reverse.join(" ")
+return code_name
+end
+# puts alias_manager("Celia torres")
+
 
 alias_data = {}
 
 puts "Please enter your first and last name. Type 'quit' when done."
 loop do
-name = gets.chomp
-break if name == "quit"
-codename = alias_manager(name)
-# store data in a hash
-alias_data[:name] = codename
-end 
+  real_name = gets.chomp
+break if real_name == "quit"
+  codename = alias_manager(real_name)
+  # store data in a hash
+  alias_data[real_name] = codename
+end
 
-alias_data.each do |name,codename| 
+alias_data.each do |name,codename|
   puts "Your name #{name} now changes to #{codename}."
-end 
-
-
+end
