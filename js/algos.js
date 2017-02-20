@@ -67,7 +67,6 @@ function generateRandomWords(num)
   var randomWordsArray = [];
   var alphabet = "abcdefghijklnmopqrstuvwxyz";
 
-// random word to 1-10 characters
   for (var i = 0; i < num; i++) {
     var randomWord = "";
     var randNum1to10 = Math.floor((Math.random() * 10) + 1);
