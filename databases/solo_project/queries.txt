@@ -1,0 +1,51 @@
+1. 
+sqlite> SELECT * FROM children;
+1|Elisa|true|1
+2|Thomas|true|2
+3|Rory|false|3
+4|Deborah|false|4
+5|Luis|true|5
+
+2.
+sqlite> UPDATE children SET staysPM = "false" WHERE childName = "Luis";
+sqlite> SELECT * FROM children;
+1|Elisa|true|1
+2|Thomas|true|2
+3|Rory|false|3
+4|Deborah|false|4
+5|Luis|false|5
+
+3. 
+sqlite> SELECT * FROM children, parents WHERE children.parent_id = parents.id;
+1|Elisa|true|1|1|Janet|Hopkins
+2|Thomas|true|2|2|Adam|Kovacz
+3|Rory|false|3|3|Rebecca|Brown
+4|Deborah|false|4|4|David|Smith
+5|Luis|false|5|5|Jose|Emanuel
+
+4.
+sqlite> SELECT children.childName, parents.firstName
+   ...> FROM children join parents
+   ...> on children.parent_id = parents.id;
+Elisa|Janet
+Thomas|Adam
+Rory|Rebecca
+Deborah|David
+Luis|Jose
+
+5.
+sqlite> DELETE FROM children WHERE id=2;
+sqlite> SELECT * FROM children;
+1|Elisa|true|1
+3|Rory|false|3
+4|Deborah|false|4
+5|Luis|false|5
+
+6.
+sqlite> SELECT children.childName, parents.lastName
+   ...> from children left join parents
+   ...> on parents.id = children.parent_id;
+Elisa|Hopkins
+Rory|Brown
+Deborah|Smith
+Luis|Emanuel
