@@ -3,6 +3,7 @@
 # keys should be symbols
 # input: client's information (string, integer, boolean)
 # steps: 
+#   - create an empty hash
 #   - ask designer for an input
 #   - convert designer's input to the appropriate data type.
 #   - store his/her input in a hash
