@@ -1,8 +1,6 @@
-# Puppy class
+Puppy class
 
 class Puppy
-
-=begin
 
 SPECIES ------------------------
 Canis familiaris
@@ -19,13 +17,3 @@ BEHAVIOR -----------------------
 Play
 Bark
 Lick
-=end 
-
-end 
-
-duchess = Puppy.new
-fido = Puppy.new
-spot = Puppy.new
-
-
-
