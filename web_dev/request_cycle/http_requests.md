@@ -1,4 +1,4 @@
-<!-- 
+
 1. What are some common HTTP status codes?
 200 OK: the request has succeeded. The information returned with the response is dependent on the method used in the request.
 300 Multiple Choices: the requested resource has different choices and cannot be resolved into one. For example, there may be several index.html pages depending on which language is wanted (such as Dutch).
@@ -31,4 +31,3 @@ Cookies are mainly used for these three purposes:
 Session management (user logins, shopping carts)
 Personalization (user preferences)
 Tracking (analyzing user behavior)
--->
