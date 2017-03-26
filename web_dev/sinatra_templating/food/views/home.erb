@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Food</title>
+</head>
+<body>
+<h1>We love to eat!</h1>
+<ul>
+	<% @food.each do |food| %>
+      <li><%= food['name'] %></li>
+    <% end %>
+  </ul>
+ <p>Click <a href="food/new">here</a> to add Food</p>
+</body>
+</html>
